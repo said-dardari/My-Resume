@@ -347,12 +347,13 @@ ul.skills li {
 	margin:0;
 	padding:0;
 	float:left;
-	width:156px;
+	/*width:156px;*/
 	background-image:url(../images/bullet.gif);
 	background-repeat: no-repeat;
 	padding-left:10px;
 	background-position: 0 .5em;
 	margin-top:6px;
+	padding-right:10px;
 }
 
 ul.works {
