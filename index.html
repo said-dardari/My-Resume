@@ -56,7 +56,7 @@
               <li><a class='north' href="https://twitter.com/dardari_said" target="_blank" title="Follow me on Twitter" target="_blank"><img src="images/icn-twitter.jpg" alt="" /></a></li>
               <li><a class='north' href="https://www.linkedin.com/in/said-dardari/" target="_blank" title="My Linkedin Profile"><img src="images/linkedin.png" alt="" /></a></li>
 			  <li>
-			  <select><option onclick="window.location.href='index.html';" selected>Fr</option><option onclick="window.location.href='index-en.html';">En</option></select>
+			  <select id="lang"><option value="fr"  selected>Fr</option><option value="en" >En</option></select>
 			  </li>
             </ul>
           </div>
@@ -223,5 +223,16 @@
 </div>
 <div id="message"><a href="#top" id="top-link">Go to Top</a></div>
 <!-- End Wrapper -->
+					      
+<script>
+$('#list').change(function() {
+    if ($(this).val() === 'fr') {
+        window.location.href = "/";
+    }else{
+	  window.location.href = "/index-en.html";			      
+    }
+});					      
+</script>					      
+					      
 </body>
 </html>
